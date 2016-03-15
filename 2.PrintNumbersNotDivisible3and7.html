@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Print number from 1 to N divided by 3 and 7</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label>Enter end number: </label><input type="text" id="tb-number" />
+	<a href="#" id="btn-check-prime" onclick="onCheckBtnClick()">Check numbers</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onCheckBtnClick() {
+
+		    var n = jsConsole.readInteger("#tb-number");
+		    var i;
+            jsConsole.writeLine("The numbers are not divisible by 3 and 7 at the same time:")
+		    for (i = 0; i <= n; i++)
+		    {
+                if (i % 3 !== 0 && i % 7 !== 0)
+		        {
+                    jsConsole.writeLine(i);
+		        }
+            }        
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Print number from 1 to N</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label>Enter end number: </label><input type="text" id="tb-number" />
+	<a href="#" id="btn-check-prime" onclick="onCheckBtnClick()">Check numbers</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onCheckBtnClick() {
+
+		    var n = jsConsole.readInteger("#tb-number");
+		    var number = 1;
+
+		    while (number <= n) {
+		        jsConsole.writeLine(number);
+		        number++;
+		    }
+		}
+	</script>
+</body>
+</html>
